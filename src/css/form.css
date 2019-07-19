@@ -1,0 +1,117 @@
+.form_container {
+  width: 280px;
+  height: 220px;
+  padding: 1em;
+  /* border: 1px solid red; */
+  background: rgba(255, 255, 255, 0.493);
+  border-radius: 10px;
+  box-shadow: 2px 2px 14px 6px rgba(68, 68, 68, 0.774);
+}
+.gotcha {
+  display: none;
+}
+.form {
+  /* width: 300px; */
+  /* height: 300px; */
+  display: flex;
+  flex-direction: column;
+}
+.form_name {
+  margin-bottom: 5px;
+  border: 1px solid rgba(114, 114, 114, 0.835);
+  background: rgba(255, 255, 255, 0.335);
+  border-radius: 10px;
+  padding-left: 1em;
+}
+.form_email {
+  margin-bottom: 5px;
+  border: 1px solid rgba(114, 114, 114, 0.835);
+  background: rgba(255, 255, 255, 0.335);
+  border-radius: 10px;
+  padding-left: 1em;
+}
+.area {
+  margin-bottom: 5px;
+  height: 100px;
+  max-height: 100px;
+  width: 250px;
+  max-width: 250px;
+  min-width: 250px;
+  min-height: 100px;
+  border: 1px solid rgba(114, 114, 114, 0.835);
+  background: rgba(255, 255, 255, 0.335);
+  border-radius: 10px;
+  padding-left: 1em;
+}
+.btn_submit {
+  border: 0;
+  color: white;
+  height: 40px;
+  background: linear-gradient(to right, rgb(104, 1, 144), rgb(255, 0, 76));
+  border-bottom: 5px solid rgba(128, 128, 128, 0.383);
+  border-radius: 10px;
+}
+
+/* #################tablet################## */
+@media screen and (max-width: 768px) {
+  .form_container {
+    width: 500px;
+    height: 400px;
+  }
+  .form_name {
+    height: 35px;
+    border-radius: 20px;
+  }
+  .form_email {
+    height: 35px;
+    border-radius: 20px;
+  }
+  .area {
+    height: 250px;
+    max-height: 250px;
+    width: 470px;
+    max-width: 470px;
+    min-width: 400px;
+    min-height: 250px;
+  }
+  .btn_submit {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form_container {
+    width: 350px;
+    height: 400px;
+  }
+  .area {
+    height: 250px;
+    max-height: 250px;
+    width: 300px;
+    max-width: 300px;
+    min-width: 200px;
+    min-height: 250px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .form_container {
+    width: 320px;
+    height: 380px;
+  }
+  .area {
+    height: 200px;
+    max-height: 200px;
+    width: 280px;
+    max-width: 280px;
+    min-width: 280px;
+    min-height: 200px;
+  }
+  .form_name::placeholder {
+    color: rgb(88, 88, 88);
+    font-size: 1.2em;
+  }
+  .form_email::placeholder {
+    color: rgb(88, 88, 88);
+    font-size: 1.2em;
+  }
+}

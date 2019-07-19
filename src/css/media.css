@@ -1,0 +1,194 @@
+.media_container {
+  width: 90%;
+  height: 100%;
+  background-image: url("../img/cool.jpg");
+  background-size: cover;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  opacity: 0.8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?xziw6z");
+  src: url("../fonts/icomoon.eot?xziw6z#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?xziw6z") format("truetype"),
+    url("../fonts/icomoon.woff?xziw6z") format("woff"),
+    url("../fonts/icomoon.svg?xziw6z#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkedin:before {
+  content: "\e904";
+}
+.icon-github:before {
+  content: "\e906";
+}
+.icon-instagram:before {
+  content: "\e907";
+}
+.icon-whatsapp:before {
+  content: "\e908";
+}
+.icon-mail:before {
+  content: "\e909";
+}
+.icon-redo:before {
+  content: "\e903";
+}
+.icon-share:before {
+  content: "\e902";
+}
+.icon-fire:before {
+  content: "\e901";
+}
+.icon-envelope-o:before {
+  content: "\e90a";
+}
+.icon-formation:before {
+  content: "\e900";
+}
+
+/*=================================== hasta aqui los iconos ==========================*/
+.ancla {
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  /* display: none; */
+}
+.disappear {
+  display: none;
+}
+.contacto_title {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(70, 70, 70, 0.815);
+}
+.social_caja {
+  /* border: 1px solid red; */
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* =========== github */
+.icon-github {
+  margin: 0;
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(70, 70, 70, 0.815);
+  transition-duration: 0.3s;
+}
+.icon-github:hover {
+  font-size: 45px;
+  text-shadow: none;
+  background: -webkit-linear-gradient(rgb(22, 22, 22), rgb(105, 105, 105));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* ============instagram */
+.icon-instagram {
+  margin: 0;
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(70, 70, 70, 0.815);
+  transition-duration: 0.3s;
+}
+.icon-instagram:hover {
+  font-size: 45px;
+  text-shadow: none;
+  background: -webkit-linear-gradient(rgb(104, 1, 144), rgb(255, 0, 76));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* ============== whatsapp */
+.icon-envelope-o {
+  margin: 0;
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(70, 70, 70, 0.815);
+  transition-duration: 0.3s;
+}
+.icon-envelope-o:hover {
+  font-size: 45px;
+  text-shadow: none;
+  background: -webkit-linear-gradient(rgb(218, 0, 0), rgb(165, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.whatsapp_container {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ############## tablet ############ */
+@media screen and (max-width: 769px) {
+  .icon-github {
+    font-size: 70px;
+  }
+}
+.icon-instagram {
+  font-size: 70px;
+}
+.icon-envelope-o {
+  font-size: 70px;
+}
+.social_caja {
+  height: 350px;
+  justify-content: space-around;
+}
+.contacto_title {
+  font-size: 50px;
+  text-shadow: 6px 6px 6px rgba(70, 70, 70, 0.815);
+}
+/* $$$$$$$$$$$$$$$$$$$$ 480 $$$$$$$$$$$$$$$ */
+@media screen and (max-width: 480px) {
+  .media_container {
+    width: 100%;
+    height: 90vh;
+  }
+  .social_caja {
+    margin: 0;
+  }
+  .contacto_title {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 320px) {
+  .contacto_title {
+    font-size: 1.5em;
+  }
+  .social_caja {
+    height: 250px;
+  }
+}

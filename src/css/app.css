@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 2em;
+}
+.app_container {
+  /* border: 1px solid red; */
+  border-radius: 20px;
+  box-shadow: 2px 2px 15px 2px rgba(180, 180, 180, 0.712);
+  width: 100%;
+  height: 85vh;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+  .app_container {
+    border-radius: none;
+    box-shadow: none;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app_container {
+    flex-direction: column-reverse;
+    position: relative;
+    height: 100%;
+  }
+}
